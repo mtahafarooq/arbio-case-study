@@ -12,6 +12,9 @@ const nextConfig = withExpo({
   experimental: {
     forceSwcTransforms: true,
   },
+  images: {
+    disableStaticImages: true,
+  }
 });
 
 module.exports = nextConfig;

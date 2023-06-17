@@ -1,6 +1,10 @@
 {
   "expo": {
     "name": "arbio-case-study",
-    "slug": "arbio-case-study"
+    "slug": "arbio-case-study",
+    "scheme": "arbio-case-study",
+    "web": {
+        "bundler": "metro"
+      }
   }
 }
