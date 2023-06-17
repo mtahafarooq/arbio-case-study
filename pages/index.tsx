@@ -1,10 +1,16 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Pressable } from "react-native";
+import Link from "next/link";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Welcome to Expo + Next.js 👋</Text>
+      <Text style={styles.text}>Welcome 👋</Text>
+      <Link href="/properties">
+        <Pressable>
+          {() => <Text style={styles.link}>Go To Properties List</Text>}
+        </Pressable>
+      </Link>
     </View>
   );
 }
@@ -14,8 +20,16 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "black",
   },
   text: {
-    fontSize: 16,
+    fontSize: 36,
+    marginBottom: 20,
+    color: "white",
+  },
+  link: {
+    fontSize: 26,
+    textDecorationLine: "underline",
+    color: "white",
   },
 });
