@@ -4,7 +4,15 @@
     "slug": "arbio-case-study",
     "scheme": "arbio-case-study",
     "web": {
-        "bundler": "metro"
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "177d17ca-8f22-48ab-8aff-bd92c7396308"
       }
+    },
+    "ios": {
+      "bundleIdentifier": "com.mtahafrq.arbiocasestudy"
+    }
   }
 }
